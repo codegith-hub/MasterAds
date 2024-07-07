@@ -8,7 +8,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        minSdk = 24
+        minSdk = 21
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -54,7 +54,7 @@ afterEvaluate {
             register<MavenPublication>("release") {
                 groupId = "com.github.codegith-hub"
                 artifactId = "MasterAds"
-                version = "1.0.0"
+                version = "1.0.2"
                 from(components["release"])
             }
         }
