@@ -9,7 +9,6 @@ android {
 
     defaultConfig {
         minSdk = 21
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
@@ -31,13 +30,13 @@ android {
 }
 
 dependencies {
-    implementation (libs.inapp.sdk)
     implementation(libs.appcompat)
     implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation (libs.volley)
+    implementation ("com.android.volley:volley:1.2.1")
+    implementation ("com.startapp:inapp-sdk:5.+")
 }
 android {
     publishing {
