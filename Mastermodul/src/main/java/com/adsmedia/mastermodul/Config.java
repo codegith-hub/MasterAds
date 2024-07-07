@@ -37,7 +37,7 @@ public class Config {
                         idKey.add(keyID);
                     }
                     StartAppSDK.init(activity, idKey.get(keyPos), false);
-                    Toast.makeText(activity, idKey.get(keyPos), Toast.LENGTH_SHORT).show();
+
                 } catch (JSONException e) {
 
                     e.printStackTrace();

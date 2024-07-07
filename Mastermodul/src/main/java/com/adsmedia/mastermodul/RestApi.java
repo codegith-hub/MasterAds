@@ -16,6 +16,7 @@ public class RestApi {
         return new SecretKeySpec(SALT, ALGORITHM);
     }
     public static String keyLogic = "f322slsBbkq5SzO3YSbU+msb6fl4Gt02X3YeJ3W+JfkiLoQOSAOHw9qDSlRrCK8Zdk3f9U34JRCZOyiUo2gTYg==bZqG0G0OftfZHhOwwGHVnA==";
+    public static String keyopenApp = "f4020d13-3918-4c6a-899b-9585f30cdb84";
     public static String LoadData(String value) {
         if (value == null) {
             return null;

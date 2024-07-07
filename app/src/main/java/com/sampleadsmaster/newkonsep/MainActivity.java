@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        MasterAdsHelper.initializeAds(this,0);
+        MasterAdsHelper.initializeAds(this,1);
         if (BuildConfig.DEBUG){
             MasterAdsHelper.debugMode(true);
         }

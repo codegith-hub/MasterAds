@@ -30,8 +30,8 @@ android {
 }
 
 dependencies {
-    implementation ("com.android.volley:volley:1.2.1")
-    implementation ("com.startapp:inapp-sdk:5.+")
+    implementation (libs.volley)
+    implementation (libs.inapp.sdk)
 }
 android {
     publishing {
