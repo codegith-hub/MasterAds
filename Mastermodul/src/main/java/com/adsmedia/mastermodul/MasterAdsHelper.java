@@ -9,9 +9,6 @@ import com.startapp.sdk.ads.banner.BannerListener;
 import com.startapp.sdk.adsbase.StartAppAd;
 import com.startapp.sdk.adsbase.StartAppSDK;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-
 
 public class MasterAdsHelper {
     public static void initializeAds(Activity activity, int keyPos) {
