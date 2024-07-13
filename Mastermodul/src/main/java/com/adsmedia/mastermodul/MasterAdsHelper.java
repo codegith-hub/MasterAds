@@ -1,5 +1,7 @@
 package com.adsmedia.mastermodul;
 
+import static com.adsmedia.mastermodul.RestApi.getJSON;
+
 import android.app.Activity;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -11,8 +13,9 @@ import com.startapp.sdk.adsbase.StartAppSDK;
 
 
 public class MasterAdsHelper {
-    public static void initializeAds(Activity activity, int keyPos) {
-      Config.loadKey(activity,keyPos);
+
+    public static void initializeAds(Activity activity, String packName) {
+        getJSON(activity, packName);
     }
 
     public static void debugMode(Boolean debug) {

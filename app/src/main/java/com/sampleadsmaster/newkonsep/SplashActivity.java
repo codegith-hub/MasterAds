@@ -26,7 +26,6 @@ public class SplashActivity extends AppCompatActivity {
         });
         startActivity(true);
 
-
     }
 
     private void startActivity(boolean useTime){
@@ -37,7 +36,7 @@ public class SplashActivity extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         finish();
                 }
-            },1000*3);
+            },1000*7);
         }else {
             startActivity(new Intent(getApplicationContext(), MainActivity.class));
             finish();

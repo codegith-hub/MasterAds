@@ -32,6 +32,7 @@ android {
 dependencies {
     implementation (libs.volley)
     implementation (libs.inapp.sdk)
+    implementation (libs.volley)
 }
 android {
     publishing {

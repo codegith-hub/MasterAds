@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.startapp:json:1.0.1@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3b7f1d2b8c026c18f2c1e3d50362da8d/transformed/json-1.0.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3b7f1d2b8c026c18f2c1e3d50362da8d/transformed/json-1.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/052b0a678e9ebb206b69f5b03d033fa6/transformed/json-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/052b0a678e9ebb206b69f5b03d033fa6/transformed/json-1.0.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.startapp/json/1.0.1/7bcbb40762d846ee75901bca72e6a55da2d39b4/json-1.0.1-javadoc.jar!/" />
