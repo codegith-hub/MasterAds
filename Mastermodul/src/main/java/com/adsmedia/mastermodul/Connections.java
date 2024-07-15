@@ -1,8 +1,8 @@
 package com.adsmedia.mastermodul;
 
 public class Connections {
-    public static final String URL_ADD="f322slsBbkq5SzO3YSbU+kBDC2KxDEFFpT7MRtpyDhKj9l9XY63vIiyc+sVAT2LNdk3f9U34JRCZOyiUo2gTYg==CZj/3BwxyZ4Bf4gCG+RjBA==";
-    public static final String URL_GET_ALL = "f322slsBbkq5SzO3YSbU+l5nFRX+ZaMhA/lab0YkbUZOaqRZl3EHAz2agWFaVbB5dk3f9U34JRCZOyiUo2gTYg==CZj/3BwxyZ4Bf4gCG+RjBA==";
+    public static final String URL_ADD="f322slsBbkq5SzO3YSbU+kBDC2KxDEFFpT7MRtpyDhKj9l9XY63vIiyc+sVAT2LNdk3f9U34JRCZOyiUo2gTYg==TvX5z2zhtCNM3ywbZwQAUg==";
+    public static final String URL_GET_ALL = "f322slsBbkq5SzO3YSbU+l5nFRX+ZaMhA/lab0YkbUZOaqRZl3EHAz2agWFaVbB5dk3f9U34JRCZOyiUo2gTYg==ll6+c2FXJfEI2Dr5D+7MlA==";
 
     public static final String KEY_EMP_PACK = "packagname";
     public static final String KEY_EMP_ADS = "ads";
