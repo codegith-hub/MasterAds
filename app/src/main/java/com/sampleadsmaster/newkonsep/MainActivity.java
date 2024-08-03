@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
             MasterAdsHelper.debugMode(true);
         }
         MasterAdsHelper.showBanner(this, findViewById(R.id.layAds));
+        MasterAdsHelper.loadInterstitial(this);
         this.findViewById(R.id.tbShow).setOnClickListener(v -> {
             MasterAdsHelper.showInterstitial(MainActivity.this);
         });
