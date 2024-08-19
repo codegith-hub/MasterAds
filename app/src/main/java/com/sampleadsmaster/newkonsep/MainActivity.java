@@ -4,6 +4,8 @@ import static android.Manifest.permission.POST_NOTIFICATIONS;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.widget.Toast;
+
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,9 +34,22 @@ public class MainActivity extends AppCompatActivity {
         }
         MasterAdsHelper.showBanner(this, findViewById(R.id.layAds));
         MasterAdsHelper.loadInterstitial(this);
+        MasterAdsHelper.loadReward(this);
         this.findViewById(R.id.tbShow).setOnClickListener(v -> {
             MasterAdsHelper.showInterstitial(MainActivity.this);
         });
+        this.findViewById(R.id.tbReward).setOnClickListener(v -> {
+            MasterAdsHelper.showReward(MainActivity.this);
+        });
 
+    }
+
+    public void onResume() {
+        if (MasterAdsHelper.unlockreward){
+            Toast.makeText(this, "Add Coins!",
+                    Toast.LENGTH_LONG).show();
+
+        }
+        super.onResume();
     }
 }

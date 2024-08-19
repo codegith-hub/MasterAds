@@ -12,10 +12,12 @@ import com.startapp.sdk.adsbase.Ad;
 import com.startapp.sdk.adsbase.StartAppAd;
 import com.startapp.sdk.adsbase.StartAppSDK;
 import com.startapp.sdk.adsbase.adlisteners.AdEventListener;
+import com.startapp.sdk.adsbase.adlisteners.VideoListener;
 
 
 public class MasterAdsHelper {
     private static StartAppAd startAppAd;
+    public static boolean unlockreward = false;
     public static void initializeAds(Activity activity, String packName) {
         getJSON(activity, packName);
     }
@@ -59,5 +61,34 @@ public class MasterAdsHelper {
 
     public static void showInterstitial(Activity activity) {
         startAppAd.showAd();
+    }
+
+    public static StartAppAd rewardedVideo;
+
+    public static void loadReward(Activity activity) {
+        rewardedVideo = new StartAppAd(activity);
+        rewardedVideo.setVideoListener(new VideoListener() {
+            @Override
+            public void onVideoCompleted() {
+                unlockreward = true;
+            }
+        });
+        rewardedVideo.loadAd(StartAppAd.AdMode.REWARDED_VIDEO, new AdEventListener() {
+            @Override
+            public void onReceiveAd(com.startapp.sdk.adsbase.Ad ad) {
+
+            }
+
+            @Override
+            public void onFailedToReceiveAd(com.startapp.sdk.adsbase.Ad ad) {
+
+            }
+        });
+    }
+
+    public static void showReward(Activity activity) {
+        if (rewardedVideo.isReady()) {
+            rewardedVideo.showAd();
+        }
     }
 }
