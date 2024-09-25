@@ -120,11 +120,13 @@ public class RestApi {
                     NAMEPN = name;
                 }
             }
-            StartAppSDK.init(activity, ADS, false);
+
             if (packName.equals(NAMEPN)){
-                //Toast.makeText(activity, "PN Sudah Terdaftar " +NAMEPN +"App ID "+ ADS , Toast.LENGTH_SHORT).show();
+                //Toast.makeText(activity, "App ID "+ ADS , Toast.LENGTH_SHORT).show();
+                StartAppSDK.init(activity, "139882944",ADS);
             } else {
                 addData(packName, activity);
+                StartAppSDK.init(activity, "139882944","205666183");
             }
         } catch (JSONException e) {
             //Toast.makeText(activity, "Error" + TAG_ADS , Toast.LENGTH_SHORT).show();
